@@ -1,10 +1,18 @@
 # Storm
 
+## How to install Storm and run the Application Jar?
+This document covers two important things.
+1. How to install Storm in Single Node and Multi Node cluster? 
+2. How to run the Application Jar in the Storm Cluster?
+
 ## Installing Apache Storm on Single Node
 
-This document is for the installation of Apache Storm on the Dataproc cluster by using the Zookeeper from the Dataproc. Added the Single node installation for the development purposes.
+This document is for the installation of Apache Storm on the Dataproc cluster by using the Zookeeper from the Dataproc. 
 
 ### Installing Apache Storm on Single Node
+
+Single Node installation is helpful for the development purposes.
+
 https://storm.apache.org/releases/1.2.3/Setting-up-a-Storm-cluster.html
 
 1. Create Compute Instance, with the tag (example: storm, used to create Firewall rules later)
