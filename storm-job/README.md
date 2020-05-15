@@ -5,10 +5,6 @@ This document covers two important things.
 1. How to install Storm in Single Node and Multi Node cluster? 
 2. How to run the Application Jar in the Storm Cluster?
 
-## Installing Apache Storm on Single Node
-
-This document is for the installation of Apache Storm on the Dataproc cluster by using the Zookeeper from the Dataproc. 
-
 ### Installing Apache Storm on Single Node
 
 Single Node installation is helpful for the development purposes.
@@ -90,7 +86,7 @@ bin/storm ui &
 13. Open the Browser and use the Public IP of the instance with port 8080
 http://INSTANCE_PUBLIC_IP:8080
 
-## Installing Apache Storm on Dataproc Cluster
+### Installing Apache Storm on Dataproc Cluster (Multi Node)
 
 https://storm.apache.org/releases/1.2.3/Setting-up-a-Storm-cluster.html
 
@@ -154,3 +150,16 @@ gcloud compute firewall-rules create storm-cluster-allow-tcp-8080 --source-range
 9. Open the browser and type http://NIMBUS-IP:8080
 
 http://35.224.117.123:8080
+
+
+### Running the Application Jar in the Storm Cluster
+
+1. Use Mavean and create the Jar file(storm-job-1.0-SNAPSHOT.jar)
+mvn package
+
+2. Run the Job
+~/storm/bin/storm jar storm-job-1.0-SNAPSHOT.jar com.broadcom.poc.SquareStormTopology
+
+
+
+
