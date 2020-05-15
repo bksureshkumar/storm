@@ -155,9 +155,11 @@ http://35.224.117.123:8080
 ### Running the Application Jar in the Storm Cluster
 
 1. Use Mavean and create the Jar file(storm-job-1.0-SNAPSHOT.jar)
+
 mvn package
 
 2. Run the Job
+
 ~/storm/bin/storm jar storm-job-1.0-SNAPSHOT.jar com.broadcom.poc.SquareStormTopology
 
 
