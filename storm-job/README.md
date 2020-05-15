@@ -75,15 +75,19 @@ gcloud compute firewall-rules create storm-allow-tcp-8080 --source-ranges 0.0.0.
 
 
 10. Start the Nimbus:
+
 bin/storm nimbus &
 
 11. Start the Supervisor:
+
 bin/storm supervisor &
 
 12. Start the UI
+
 bin/storm ui &
 
 13. Open the Browser and use the Public IP of the instance with port 8080
+
 http://INSTANCE_PUBLIC_IP:8080
 
 ### Installing Apache Storm on Dataproc Cluster (Multi Node)
